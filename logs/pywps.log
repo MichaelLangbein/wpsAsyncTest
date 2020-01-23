@@ -1,0 +1,46 @@
+2020-01-23 16:35:56,648] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\configuration.py line=239 module=configuration function=get_size_mb Calculated real size of 3mb is 3.0
+2020-01-23 16:35:56,651] [INFO] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Service.py line=310 module=Service function=call Request: execute
+2020-01-23 16:35:56,651] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\dblog.py line=150 module=dblog function=get_session Initializing database connection
+2020-01-23 16:35:56,697] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Service.py line=104 module=Service function=_parse_and_execute Checking if all mandatory inputs have been passed
+2020-01-23 16:35:56,697] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\validator\literalvalidator.py line=27 module=literalvalidator function=validate_value validating literal value.
+2020-01-23 16:35:56,698] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\validator\literalvalidator.py line=32 module=literalvalidator function=validate_value validation result: True
+2020-01-23 16:35:56,834] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py line=124 module=Process function=execute Check if status storage and updating are supported by this process
+2020-01-23 16:35:56,834] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py line=138 module=Process function=execute Check if updating of status is not required then no need to spawn a process
+2020-01-23 16:35:56,834] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\dblog.py line=150 module=dblog function=get_session Initializing database connection
+2020-01-23 16:35:56,845] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py line=178 module=Process function=_execute_process Running processes: 0 of 1 allowed parallelprocesses
+2020-01-23 16:35:56,845] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py line=179 module=Process function=_execute_process Stored processes: 0
+2020-01-23 16:35:56,845] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\dblog.py line=150 module=dblog function=get_session Initializing database connection
+2020-01-23 16:35:56,857] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\response\execute.py line=63 module=execute function=_update_status _update_status: status=1, clean=True
+2020-01-23 16:35:56,884] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py line=183 module=Process function=_execute_process Accepted request 0c56a24c-3df6-11ea-971f-8c04ba3e7cee
+2020-01-23 16:35:56,887] [INFO] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\processing\__init__.py line=29 module=__init__ function=Process Processing mode: default
+2020-01-23 16:35:56,887] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py line=212 module=Process function=_run_async Starting process for request: 0c56a24c-3df6-11ea-971f-8c04ba3e7cee
+2020-01-23 16:35:56,893] [DEBUG] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\dblog.py line=150 module=dblog function=get_session Initializing database connection
+2020-01-23 16:35:56,911] [ERROR] file=C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\exceptions.py line=45 module=exceptions function=__init__ Exception: code: 500, description: No applicable error code, please check error log., locator: 
+Traceback (most recent call last):
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Service.py", line 336, in call
+    raise e
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Service.py", line 329, in call
+    request_uuid
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Service.py", line 81, in execute
+    return self._parse_and_execute(process, wps_request, uuid)
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Service.py", line 169, in _parse_and_execute
+    wps_response = process.execute(wps_request, uuid)
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py", line 140, in execute
+    wps_response = self._execute_process(self.async_, wps_request, wps_response)
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py", line 184, in _execute_process
+    self._run_async(wps_request, wps_response)
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\app\Process.py", line 213, in _run_async
+    process.start()
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\site-packages\pywps\processing\basic.py", line 36, in start
+    process.start()
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\multiprocessing\process.py", line 105, in start
+    self._popen = self._Popen(self)
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\multiprocessing\popen_spawn_win32.py", line 65, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\lang_m13\AppData\Local\Continuum\miniconda3\envs\logic\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+TypeError: cannot serialize '_io.BufferedReader' object
